@@ -193,7 +193,7 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
                         proxyTxt = gr.Textbox(
                             show_label=True,
                             placeholder=f"在这里输入代理地址...",
-                            label="代理地址（示例：http://127.0.0.1:10809）",
+                            label="代理地址（示例：http://127.0.0.1:7890",
                             value="",
                             lines=2,
                         )
@@ -380,11 +380,11 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
 
 logging.info(
     colorama.Back.GREEN
-    + "\n川虎的温馨提示：访问 http://localhost:7860 查看界面"
+    + "\nWebUI: http://localhost:7860 "
     + colorama.Style.RESET_ALL
 )
 # 默认开启本地服务器，默认可以直接从IP访问，默认不创建公开分享链接
-demo.title = "川虎ChatGPT 🚀"
+demo.title = "Caibao GPT"
 
 if __name__ == "__main__":
     reload_javascript()
